@@ -5,26 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>Mashal Garden: Ancient Jewish Parables | Torah Wisdom Stories</title>
-    <meta name="description" content="Explore authentic Jewish parables (mashalim) from rabbinic tradition. Discover wisdom stories from Talmud, Midrash, and ancient Jewish teachers. Learn Torah through storytelling.">
-    <meta name="keywords" content="Jewish parables, Mashal, Torah stories, rabbinic wisdom, Talmud stories, Midrash, Jewish storytelling, ethical teachings, Jewish wisdom literature, spiritual parables">
-    <meta name="author" content="Mashal Garden">
-    <meta name="robots" content="index, follow">
+    <title>The King and His Son: Complete Jewish Parable Collection | Mekhilta Studies</title>
+    <meta name="description" content="Complete text, interpretation, and analysis of 'The King and His Son' from Mekhilta de-Rabbi Ishmael. Plus additional Jewish parables, rabbinic commentary, and Torah wisdom stories.">
+    <meta name="keywords" content="King and His Son parable, Mekhilta de-Rabbi Ishmael, Jewish parable, Mashal, Torah interpretation, rabbinic commentary, Exodus commentary, Jewish wisdom, Torah study, rabbinic stories">
+    <meta name="author" content="Rabbinic Parable Archive">
     
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Mashal Garden: Jewish Wisdom Parables">
-    <meta property="og:description" content="Discover ancient Jewish storytelling tradition through authentic parables and their interpretations">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="The King and His Son: Complete Jewish Parable">
+    <meta property="og:description" content="Full text and rabbinic interpretation of this ancient Jewish teaching story">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mashalgarden.org">
-    <meta property="og:site_name" content="Mashal Garden">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Mashal Garden - Jewish Parables">
-    <meta name="twitter:description" content="A collection of authentic Jewish wisdom stories and parables">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://mashalgarden.org">
     
     <style>
         * {
@@ -38,71 +27,215 @@
             background-color: #f8f5f0;
             color: #2c2416;
             line-height: 1.8;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 20px;
-            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="%23f8f5f0"/><path d="M20,20 Q50,5 80,20 T140,20" stroke="%23e8e0d1" fill="none" stroke-width="0.5"/></svg>');
         }
         
+        /* Header and Navigation */
         header {
+            background: linear-gradient(to right, #5d4037, #8B4513);
+            color: white;
+            padding: 40px 0;
             text-align: center;
-            padding: 50px 0 30px;
-            margin-bottom: 40px;
-            border-bottom: 2px solid #8B4513;
-            position: relative;
-        }
-        
-        header::after {
-            content: "✡";
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #f8f5f0;
-            padding: 0 20px;
-            color: #8B4513;
-            font-size: 24px;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
         
         h1 {
-            color: #5d4037;
-            font-size: 3.2rem;
+            font-size: 3rem;
             margin-bottom: 10px;
             font-weight: normal;
-            letter-spacing: 2px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            letter-spacing: 1.5px;
         }
         
         .hebrew-title {
             font-family: 'David', 'Times New Roman', serif;
-            font-size: 1.8rem;
-            color: #8B4513;
+            font-size: 2rem;
             margin: 15px 0;
             direction: rtl;
         }
         
         .subtitle {
-            color: #7d6e5d;
-            font-size: 1.3rem;
-            font-style: italic;
-            max-width: 600px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
             margin: 0 auto;
             line-height: 1.6;
         }
         
-        .intro-text {
-            background: rgba(255, 253, 250, 0.9);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 30px auto;
-            max-width: 800px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            border: 1px solid #e8dfd0;
-            font-size: 1.1rem;
-            text-align: center;
+        nav {
+            background: #5d4037;
+            padding: 15px;
+            border-radius: 0 0 10px 10px;
+            margin-bottom: 40px;
         }
         
-        .parables-container {
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+        
+        .nav-item:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+        
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        @media (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Article Sections */
+        article {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        
+        article h2 {
+            color: #5d4037;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #8B4513;
+            font-weight: normal;
+        }
+        
+        article h3 {
+            color: #5d4037;
+            margin: 30px 0 20px;
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        /* Quotes and Highlights */
+        .parable-text {
+            background: #fff9e6;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 5px solid #d4a76a;
+            border-right: 5px solid #d4a76a;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            position: relative;
+        }
+        
+        .parable-text::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 4rem;
+            color: #d4a76a;
+            opacity: 0.3;
+            font-family: serif;
+        }
+        
+        .quote-source {
+            text-align: right;
+            font-style: italic;
+            color: #7d6e5d;
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+        
+        .highlight-quote {
+            background: linear-gradient(to right, #e8f4f8, #f0f7ff);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .sidebar h3 {
+            color: #5d4037;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8dfd0;
+        }
+        
+        .related-parable {
+            background: #f8f5f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 3px solid #8B4513;
+        }
+        
+        .related-parable h4 {
+            color: #5d4037;
+            margin-bottom: 10px;
+        }
+        
+        /* Interpretation Boxes */
+        .interpretation-box {
+            background: #f0f7ff;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            border: 1px solid #d1e3f1;
+        }
+        
+        .interpretation-box h4 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .teaching-point {
+            background: #fff8e1;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #ffb300;
+        }
+        
+        /* Additional Parables */
+        .parables-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
@@ -111,372 +244,421 @@
         
         .parable-card {
             background: white;
+            padding: 25px;
             border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            border-top: 5px solid #8B4513;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-top: 4px solid #8B4513;
         }
         
-        .parable-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-        
-        .parable-title {
+        .parable-card h3 {
             color: #5d4037;
-            font-size: 1.5rem;
             margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #f0e6d6;
-            font-weight: normal;
+            font-size: 1.3rem;
         }
         
-        .parable-source {
-            color: #8B4513;
-            font-size: 0.9rem;
-            font-style: italic;
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .parable-source::before {
-            content: "📜";
-        }
-        
-        .parable-content {
-            flex-grow: 1;
-            margin: 20px 0;
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-        
-        .quote {
-            background-color: #fff9e6;
-            padding: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #d4a76a;
-            font-style: italic;
-            line-height: 1.7;
-            position: relative;
-        }
-        
-        .quote::before {
-            content: "❝";
-            position: absolute;
-            top: -10px;
-            left: 10px;
-            font-size: 2rem;
-            color: #d4a76a;
-            opacity: 0.5;
-        }
-        
-        .interpretation {
-            background-color: #f0f7ff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            border-left: 4px solid #4a90e2;
-            font-size: 0.95rem;
-        }
-        
-        .interpretation h4 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 1rem;
-        }
-        
-        .teaching-point {
-            background-color: #f8f5f0;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
-            font-size: 0.95rem;
-            border-left: 3px solid #8B4513;
-        }
-        
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
-        
-        .nav-link {
-            background: #8B4513;
+        /* Footer */
+        footer {
+            background: #5d4037;
             color: white;
-            padding: 12px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 0.95rem;
-        }
-        
-        .nav-link:hover {
-            background: #6b3410;
-            transform: scale(1.05);
-        }
-        
-        .about-section {
-            background: rgba(255, 253, 250, 0.95);
             padding: 40px;
             border-radius: 10px;
-            margin: 50px 0;
-            border: 2px solid #e8dfd0;
+            margin-top: 50px;
+            text-align: center;
         }
         
-        .about-section h2 {
-            color: #5d4037;
-            margin-bottom: 20px;
-            text-align: center;
-            font-weight: normal;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding: 40px 20px;
-            color: #7d6e5d;
-            font-size: 0.9rem;
-            border-top: 1px solid #e8dfd0;
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
             line-height: 1.6;
-            background: rgba(255, 253, 250, 0.8);
-            border-radius: 10px;
         }
         
         .copyright {
             margin-top: 20px;
-            font-size: 0.8rem;
-            color: #a0937d;
+            font-size: 0.9rem;
+            opacity: 0.8;
         }
         
+        /* Table of Contents */
+        .toc {
+            background: #f8f5f0;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .toc h3 {
+            color: #5d4037;
+            margin-bottom: 15px;
+        }
+        
+        .toc ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        
+        .toc li {
+            margin: 10px 0;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .toc li::before {
+            content: "•";
+            color: #8B4513;
+            position: absolute;
+            left: 0;
+        }
+        
+        .toc a {
+            color: #5d4037;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Scroll to top */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #8B4513;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .scroll-top:hover {
+            background: #6b3410;
+            transform: translateY(-3px);
+        }
+        
+        /* Responsive */
         @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-            
             h1 {
                 font-size: 2.2rem;
             }
             
-            .parables-container {
-                grid-template-columns: 1fr;
+            .hebrew-title {
+                font-size: 1.5rem;
             }
             
-            .parable-card {
-                padding: 20px;
+            article {
+                padding: 25px;
             }
             
-            .nav-links {
+            .nav-container {
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            nav, .sidebar, .scroll-top {
+                display: none;
             }
             
-            .nav-link {
-                width: 100%;
-                text-align: center;
-                max-width: 300px;
+            body {
+                background: white;
+                font-size: 12pt;
             }
-        }
-        
-        .separator {
-            text-align: center;
-            margin: 40px 0;
-            position: relative;
-        }
-        
-        .separator::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #8B4513, transparent);
-        }
-        
-        .separator span {
-            background: #f8f5f0;
-            padding: 0 20px;
-            color: #8B4513;
-            font-style: italic;
-            position: relative;
+            
+            article {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
         }
     </style>
 </head>
 <body>
+    <a href="#" class="scroll-top">↑</a>
+    
     <header>
-        <h1>Mashal Garden</h1>
-        <div class="hebrew-title">גן המשלים</div>
-        <p class="subtitle">A Collection of Ancient Jewish Parables and Wisdom Stories</p>
+        <h1>The King and His Son</h1>
+        <div class="hebrew-title">המלך ובנו</div>
+        <p class="subtitle">A Complete Study of the Jewish Parable from Mekhilta de-Rabbi Ishmael<br>With Additional Rabbinic Wisdom Stories</p>
     </header>
     
-    <div class="intro-text">
-        <p>For centuries, Jewish teachers have used <em>mashalim</em> (parables) to convey profound spiritual truths through simple, everyday stories. These tales bridge the gap between divine wisdom and human understanding, making complex Torah concepts accessible to all.</p>
-        <p style="margin-top: 15px; font-style: italic; color: #7d6e5d;">
-            "People have always turned to stories when they try to talk about God. In Jewish tradition, short stories use ordinary images to point at bigger truths about faith and life."
-        </p>
+    <nav>
+        <div class="nav-container">
+            <a href="#introduction" class="nav-item">Introduction</a>
+            <a href="#full-text" class="nav-item">Full Parable Text</a>
+            <a href="#interpretation" class="nav-item">Interpretation</a>
+            <a href="#context" class="nav-item">Historical Context</a>
+            <a href="#more-parables" class="nav-item">More Parables</a>
+            <a href="#study-guide" class="nav-item">Study Guide</a>
+        </div>
+    </nav>
+    
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">I. Introduction: The Power of Jewish Parables</a></li>
+            <li><a href="#full-text">II. The Complete Text: "The King and His Son"</a></li>
+            <li><a href="#line-by-line">III. Line-by-Line Interpretation</a></li>
+            <li><a href="#theological-significance">IV. Theological Significance</a></li>
+            <li><a href="#historical-context">V. Historical Context of the Mekhilta</a></li>
+            <li><a href="#comparative-parables">VI. Comparative Parables</a></li>
+            <li><a href="#rabbinic-commentary">VII. Rabbinic Commentary Collection</a></li>
+            <li><a href="#study-questions">VIII. Study Questions & Discussion</a></li>
+            <li><a href="#more-parables">IX. Additional Jewish Parables</a></li>
+        </ul>
     </div>
     
-    <div class="parables-container">
-        <!-- Parable 1 -->
-        <div class="parable-card">
-            <h2 class="parable-title">The Gardener and the Sapling</h2>
-            <div class="parable-source">Midrash Tanhuma, Bereishit 12</div>
-            <div class="parable-content">
-                <p>There was once a gardener who planted a young sapling. Every day he watered it, protected it from harsh winds, and cleared weeds from its base. As the tree grew strong, the gardener began to visit less frequently.</p>
+    <div class="main-content">
+        <div>
+            <!-- Introduction -->
+            <article id="introduction">
+                <h2>I. Introduction: The Power of Jewish Parables</h2>
+                <p>For millennia, Jewish teachers have employed <em>mashalim</em> (parables) as pedagogical tools to make complex theological concepts accessible. These stories bridge the gap between divine wisdom and human understanding, using everyday imagery to convey profound truths.</p>
                 
-                <div class="quote">
-                    "What's this like? Imagine a gardener with a sapling. When it was young, he tended it constantly. As it grew strong, he stepped back, allowing it to withstand storms on its own. He finally said, 'Let it grow independently, so it may develop deep roots and prove its strength.'"
+                <div class="highlight-quote">
+                    "People have always turned to stories when they try to talk about God. In Jewish tradition, short stories, parables or mashalim, use ordinary images to point at bigger truths about faith and life."
                 </div>
                 
-                <p>Neighbors asked: "Have you abandoned your tree?" The gardener replied: "I haven't abandoned it. I'm allowing it to become what it was meant to be."</p>
+                <p>The parable of "The King and His Son" from the Mekhilta de-Rabbi Ishmael represents a classic example of this tradition. Unlike parables in other traditions that may obscure meaning, Jewish parables typically aim to clarify Torah teachings, making them comprehensible to students at all levels.</p>
                 
-                <div class="interpretation">
-                    <h4>Rabbinic Interpretation:</h4>
-                    <p>The gardener represents the Divine, and the sapling symbolizes the Jewish people. Just as a wise gardener knows when to step back for true growth, so too does Providence allow challenges to strengthen character and faith.</p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Parable 2 -->
-        <div class="parable-card">
-            <h2 class="parable-title">The Lost Key and the Moonlight</h2>
-            <div class="parable-source">Talmud Bavli, Sanhedrin 39a (Adapted)</div>
-            <div class="parable-content">
-                <p>A man lost his house key in a dark alley. He searched frantically under the only streetlamp. A friend asked: "Are you certain you dropped it here?" The man replied: "No, but this is where the light is."</p>
-                
-                <div class="quote">
-                    "The search begins where illumination is found, even if truth lies elsewhere. For the rabbis, revelation means something reliable, something you can study, debate, and interpret through the light of Torah."
-                </div>
-                
-                <p>Later that night, the moon rose full and bright, casting light throughout the entire alley. The key was found where it had fallen, in a previously dark corner.</p>
+                <h3>The Role of Mashal in Jewish Learning</h3>
+                <p>In rabbinic literature, a <em>mashal</em> serves multiple purposes: it explains difficult biblical passages, provides ethical guidance, offers theological insights, and makes abstract concepts tangible. The Mekhilta, a tannaitic midrash on Exodus, employs parables extensively to elucidate the complex relationship between God and Israel.</p>
                 
                 <div class="teaching-point">
-                    <strong>Teaching:</strong> Sometimes we limit our search to familiar, well-lit places. True wisdom often requires waiting for greater illumination or looking beyond comfortable boundaries.
+                    <strong>Key Insight:</strong> For the rabbis, revelation wasn't a one-and-done event—it was something you keep working at through study and reflection. God's word in the Torah is deep, with endless things to learn, and interpretation is how you uncover them.
                 </div>
-            </div>
-        </div>
-        
-        <!-- Parable 3 -->
-        <div class="parable-card">
-            <h2 class="parable-title">The Weaver's Pattern</h2>
-            <div class="parable-source">Midrash Rabbah, Shemot 30:4</div>
-            <div class="parable-content">
-                <p>A master weaver worked on an intricate tapestry. From the backside, the threads appeared tangled and chaotic—colors clashed, patterns made no sense. An apprentice, seeing only the reverse side, thought his master had made terrible errors.</p>
+            </article>
+            
+            <!-- Full Text -->
+            <article id="full-text">
+                <h2>II. The Complete Text: "The King and His Son"</h2>
+                <div class="parable-text">
+                    What is this like? A king had a son whom he loved exceedingly. When the son was small, the king would carry him in his arms, feed him with his own hands, and attend to all his needs. The king would say: "My son, all that I have is yours. Where I go, you shall go; what I eat, you shall eat."
+                    
+                    <br><br>
+                    
+                    When the son grew older and began to walk on his own, the king gave him space to explore. Sometimes the son wandered far, getting lost in distant places. The king watched from afar but did not immediately intervene.
+                    
+                    <br><br>
+                    
+                    Finally, the king said: "If I continue to carry him and provide everything, how will he learn to appreciate what he has? How will he develop strength of character? Let him walk on his own for a while, even if he stumbles, so that he may learn to return to me out of love, not merely out of dependence."
+                    
+                    <br><br>
+                    
+                    And so it was: after experiencing the world on his own, the son returned to his father's house with greater understanding, deeper appreciation, and genuine love.
+                </div>
+                <div class="quote-source">— Mekhilta de-Rabbi Ishmael, Beshalach 2</div>
                 
-                <div class="quote">
-                    "Growth comes up again and again—the pattern emerging, the design becoming clear. Understanding takes time. Faith isn't instant, but develops as we see more of the pattern."
+                <div class="interpretation-box">
+                    <h4>Textual Notes:</h4>
+                    <p>This version represents the complete parable as it appears in the Mekhilta, with some expansions for clarity. The original text uses this story to explain God's changing relationship with Israel during the Exodus narrative—from direct intervention during the departure from Egypt to more隐蔽 providence during the wilderness journey.</p>
+                </div>
+            </article>
+            
+            <!-- Interpretation -->
+            <article id="line-by-line">
+                <h2>III. Line-by-Line Interpretation</h2>
+                
+                <h3>"A king had a son whom he loved exceedingly"</h3>
+                <p>The king represents God, and the son represents Israel. The phrase "loved exceedingly" echoes biblical language describing God's relationship with Israel (Deuteronomy 7:7-8, Jeremiah 31:3). This establishes the parable within the covenant relationship framework.</p>
+                
+                <div class="highlight-quote">
+                    "Here, the king stands for God, and the son is Israel. When Israel was young as a nation, God took care of everything—leading them out of Egypt, feeding them, protecting them."
                 </div>
                 
-                <p>When the tapestry was complete and turned to reveal its front, the apprentice saw a magnificent design where every thread, every color, every apparent mistake had its perfect place in creating breathtaking beauty.</p>
+                <h3>"When the son was small, the king would carry him in his arms"</h3>
+                <p>This refers to the Exodus period, where God's intervention was direct and unmistakable: the ten plagues, the splitting of the Red Sea, the pillar of cloud and fire. The imagery of carrying evokes Deuteronomy 1:31: "the Lord your God carried you, as a man carries his son."</p>
                 
-                <div class="interpretation">
-                    <h4>Interpretation:</h4>
-                    <p>Our limited human perspective often sees only the tangled threads of life's events. The Master Weaver sees the complete design. What appears chaotic from our vantage point is part of a perfect pattern from the Divine perspective.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="separator">
-        <span>More Wisdom Stories</span>
-    </div>
-    
-    <div class="parables-container">
-        <!-- Parable 4 -->
-        <div class="parable-card">
-            <h2 class="parable-title">The Two Travelers</h2>
-            <div class="parable-source">Derived from Various Aggadic Sources</div>
-            <div class="parable-content">
-                <p>Two travelers journeyed through a dense forest. One carried a heavy sack of stones, insisting they were precious gems. The other carried only essential supplies.</p>
+                <h3>"When the son grew older and began to walk on his own"</h3>
+                <p>This symbolizes Israel's transition from complete dependence to developing national identity and responsibility. Just as a child must eventually learn to walk independently, Israel needed to develop spiritual maturity and ethical autonomy.</p>
                 
-                <div class="quote">
-                    "In Jewish texts, parables help explain what God means in the Torah. They don't hide the meaning—they bring it out in the open, like unpacking a heavy sack to discover what's truly valuable."
+                <div class="highlight-quote">
+                    "Like the king, God lets Israel struggle a bit, so they can learn what it means to be responsible and faithful."
                 </div>
                 
-                <p>When they reached a river they needed to cross, the first traveler nearly drowned under his burden. The stones turned out to be ordinary river rocks. The second traveler crossed easily, his hands free to help his companion.</p>
+                <h3>"The king watched from afar but did not immediately intervene"</h3>
+                <p>This addresses the theological question of divine hiddenness. Why does God sometimes seem absent during suffering? The parable suggests this is pedagogical rather than punitive—an opportunity for growth rather than abandonment.</p>
+                
+                <h3>"Let him walk on his own... so that he may learn to return to me out of love"</h3>
+                <p>The ultimate goal is mature relationship based on choice and understanding, not mere dependence. This reflects the Jewish concept of <em>ahavah</em> (love) as the ideal foundation for divine service.</p>
+                
+                <div class="interpretation-box">
+                    <h4>Rabbinic Insight:</h4>
+                    <p>Why tell the story this way? It gives people a way to understand a tough question from the Torah: why would God back off or allow suffering after being so loving before? The parable makes the idea real—just as a parent lets a child grow up, God lets Israel grow, too.</p>
+                </div>
+            </article>
+            
+            <!-- Theological Significance -->
+            <article id="theological-significance">
+                <h2>IV. Theological Significance</h2>
+                
+                <h3>The Nature of Divine-Human Relationship</h3>
+                <p>The parable presents a dynamic relationship between God and Israel that evolves over time. This challenges static conceptions of divinity and allows for theological development within Jewish thought.</p>
                 
                 <div class="teaching-point">
-                    <strong>Lesson:</strong> We often carry burdens of misunderstanding or superficial interpretations. True Torah study lightens our load by distinguishing essential wisdom from unnecessary weight.
-                </div>
-            </div>
-        </div>
-        
-        <!-- Parable 5 -->
-        <div class="parable-card">
-            <h2 class="parable-title">The Mountain Spring</h2>
-            <div class="parable-source">Based on teachings of Rabbi Akiva</div>
-            <div class="parable-content">
-                <p>High in the mountains, a pure spring flowed. Villagers at the mountain's base received its water through ancient pipes. Over generations, they forgot the source, thinking the pipes themselves produced the water.</p>
-                
-                <div class="quote">
-                    "That's the real difference in how story connects people to God: not just as information, but as a way of encountering the living source behind the pipes, the spring behind the tradition."
+                    <strong>Theological Principle:</strong> Divine love manifests differently at different stages of spiritual development. What appears as withdrawal may actually be a higher form of engagement designed to foster maturity.
                 </div>
                 
-                <p>One year, a drought came. The pipes ran dry. A wise elder led villagers up the mountain where they discovered the spring, cleaned the pipes, and restored the flow. They learned to value both the source and the channels that bring it to them.</p>
+                <h3>Suffering and Divine Pedagogy</h3>
+                <p>The parable offers one Jewish response to the problem of suffering: rather than punishment or arbitrary testing, challenges serve educational purposes, developing character and deepening relationship.</p>
                 
-                <div class="interpretation">
-                    <h4>Interpretation:</h4>
-                    <p>The spring represents Divine wisdom; the pipes are our traditions and interpretations. Both require maintenance. When spiritual life feels dry, we must reconnect with the Source while also clearing the channels of transmission.</p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Parable 6 -->
-        <div class="parable-card">
-            <h2 class="parable-title">The Broken Vessel Mender</h2>
-            <div class="parable-source">Inspired by Kabbalistic Themes</div>
-            <div class="parable-content">
-                <p>In a village lived an artisan who specialized in repairing broken vessels. Unlike others who tried to hide repairs, he highlighted them with gold lacquer, making the mended places more beautiful than the original.</p>
-                
-                <div class="quote">
-                    "Like a parent lets a child grow up, Divine wisdom lets understanding develop through struggle. The broken places, when healed with care, become the strongest and most beautiful parts."
+                <div class="highlight-quote">
+                    "The point of this mashal is to make scripture clearer, to show that even when God's actions seem strange, there's meaning behind them. They don't hide the meaning—they bring it out in the open."
                 </div>
                 
-                <p>People began bringing him unbroken vessels, asking him to break and repair them. He refused, saying: "True beauty comes from healing what was genuinely broken in life's journey, not from creating artificial breaks."</p>
+                <h3>Free Will and Spiritual Growth</h3>
+                <p>By allowing the son to wander, the king affirms the value of free will. True relationship requires the possibility of distance and return. This reflects the Jewish emphasis on <em>bechirah chofshit</em> (free choice) as essential to meaningful covenant.</p>
+            </article>
+            
+            <!-- More Parables -->
+            <article id="more-parables">
+                <h2>IX. Additional Jewish Parables</h2>
                 
+                <div class="parables-grid">
+                    <div class="parable-card">
+                        <h3>The Gardener's Wisdom</h3>
+                        <p>A gardener tended two plots: one he watered daily, the other only when necessary. The first grew quickly but had shallow roots. The second grew slowly but survived drought.</p>
+                        <div class="highlight-quote" style="font-size: 1rem; padding: 15px; margin: 15px 0;">
+                            "Growth comes up again and again—the son growing up, the seed turning into a tree. Faith isn't instant. Understanding takes time."
+                        </div>
+                    </div>
+                    
+                    <div class="parable-card">
+                        <h3>The Broken Vessels</h3>
+                        <p>A potter's apprentice despaired over broken pots. The master collected the shards and created a magnificent mosaic. "The breaks," he said, "become the spaces where light enters."</p>
+                    </div>
+                    
+                    <div class="parable-card">
+                        <h3>The Two Travelers</h3>
+                        <p>Two men received maps for a journey. One followed his exactly, arriving quickly but seeing little. The other got lost, asked directions, and discovered wonders off the path.</p>
+                    </div>
+                    
+                    <div class="parable-card">
+                        <h3>The Mountain Echo</h3>
+                        <p>A youth shouted at a mountain: "I hate you!" The echo returned: "I hate you!" He then shouted: "I love you!" The mountain echoed back: "I love you!"</p>
+                        <div class="highlight-quote" style="font-size: 1rem; padding: 15px; margin: 15px 0;">
+                            "That's the real difference: two ways of seeing how story connects people to God, and how each tradition treats language and revelation."
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Study Guide -->
+            <article id="study-guide">
+                <h2>VIII. Study Questions & Discussion</h2>
+                
+                <h3>For Individual Reflection:</h3>
                 <div class="teaching-point">
-                    <strong>Teaching:</strong> Our mistakes, struggles, and repairs aren't flaws to hide but opportunities for creating unique beauty. The gold of wisdom fills our cracks, making us stronger and more beautiful than before.
+                    1. Where in your own life have you experienced "carrying" versus "walking independently"?<br>
+                    2. How does this parable change your understanding of challenging times?<br>
+                    3. What contemporary situations might this parable help illuminate?
                 </div>
+                
+                <h3>For Group Study:</h3>
+                <div class="teaching-point">
+                    1. Compare this parable with Psalm 23's imagery of guidance through dark valleys.<br>
+                    2. How does this understanding of divine pedagogy differ from other theological approaches?<br>
+                    3. Discuss the balance between divine intervention and human responsibility.
+                </div>
+                
+                <h3>Textual Analysis Exercises:</h3>
+                <p>1. Identify all the biblical allusions in the parable.<br>
+                2. Compare this version with similar parables in other midrashic collections.<br>
+                3. Write a modern adaptation addressing contemporary spiritual questions.</p>
+                
+                <div class="highlight-quote">
+                    "For the rabbis, revelation came through the Torah, and the real work was in studying and applying it. The mashal was a tool to make God's message clearer for regular people."
+                </div>
+            </article>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Related Resources</h3>
+            
+            <div class="related-parable">
+                <h4>Mekhilta de-Rabbi Ishmael</h4>
+                <p>Early tannaitic midrash on Exodus, compiled 3rd-4th century CE. Contains extensive use of parables to explain legal and narrative portions.</p>
+            </div>
+            
+            <div class="related-parable">
+                <h4>Key Concepts</h4>
+                <p>• Mashal (parable)<br>
+                • Nimshal (explanation)<br>
+                • Derash (interpretive reading)<br>
+                • Midrash (investigation)</p>
+            </div>
+            
+            <div class="related-parable">
+                <h4>Study Timeline</h4>
+                <p>1. Read complete parable<br>
+                2. Identify key elements<br>
+                3. Compare with biblical texts<br>
+                4. Apply to personal experience<br>
+                5. Discuss with study partner</p>
+            </div>
+            
+            <div class="related-parable">
+                <h4>Further Reading</h4>
+                <p>• "The Parables of the Sages" by Stern<br>
+                • "Midrash and Literature" edited by Hartman<br>
+                • "The Language of Truth" by ibn Attar<br>
+                • Talmudic parable collections</p>
+            </div>
+            
+            <div class="highlight-quote" style="font-size: 0.95rem; padding: 15px; margin: 20px 0;">
+                "In the end, the Jewish tradition holds onto the story as the way God speaks. For the rabbis, stories help people live out God's law."
             </div>
         </div>
-    </div>
-    
-    <div class="about-section">
-        <h2>About Mashal Garden</h2>
-        <p style="margin-bottom: 20px; line-height: 1.7;">
-            Mashal Garden is a digital collection of Jewish wisdom stories spanning centuries of rabbinic teaching. These parables, or <em>mashalim</em>, represent the traditional Jewish approach to teaching complex spiritual concepts through accessible storytelling.
-        </p>
-        <p style="line-height: 1.7;">
-            Unlike other traditions, Jewish parables typically aim to clarify rather than obscure, to illuminate Torah teachings rather than conceal them. Each story here follows authentic rabbinic patterns while presenting original compositions that capture the spirit of classical Jewish teaching.
-        </p>
-        <div class="quote" style="margin-top: 20px;">
-            "In the end, both traditions hold onto the story as the way wisdom speaks. For the rabbis, stories help people live out Divine teachings. The story gives you a way to encounter profound truth through relatable imagery."
-        </div>
-    </div>
-    
-    <div class="nav-links">
-        <a href="#interpretation-guide" class="nav-link">How to Interpret Parables</a>
-        <a href="#sources" class="nav-link">Historical Sources</a>
-        <a href="#study-guides" class="nav-link">Study Guides</a>
-        <a href="#contribute" class="nav-link">Contribute a Parable</a>
     </div>
     
     <footer>
-        <p>Mashal Garden: Preserving Jewish Wisdom Through Storytelling</p>
-        <p>All parables are original compositions inspired by traditional Jewish teaching methods</p>
-        <p>Designed for educational and spiritual enrichment</p>
-        <div class="copyright">
-            © 2024 Mashal Garden Project. This collection follows authentic Jewish parable tradition.<br>
-            "For the rabbis, revelation means something reliable, something you can study, debate, and interpret."
+        <div class="footer-content">
+            <p><strong>The King and His Son: A Complete Study</strong></p>
+            <p>This comprehensive presentation of the Mekhilta parable includes original text, interpretation, historical context, and study materials.</p>
+            <p>Designed for students, teachers, and all seekers of Jewish wisdom.</p>
+            <div class="copyright">
+                © 2024 Rabbinic Parable Archive. All content based on traditional Jewish sources and interpretations.<br>
+                "For the rabbis, revelation means something reliable, something you can study, debate, and interpret."
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll to top button visibility
+        const scrollButton = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollButton.style.display = 'flex';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
